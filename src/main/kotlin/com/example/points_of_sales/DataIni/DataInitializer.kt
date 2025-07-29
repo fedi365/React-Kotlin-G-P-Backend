@@ -19,23 +19,23 @@ class DataInitializer(
     private val userService: UserService ,
     private val customUserDetailsService: CustomUserDetailsService
 ) {
-
-    @Bean
-    fun testUserDetailsService(): CommandLineRunner {
-        return CommandLineRunner {
-            try {
-                val username = "user1" // Remplace par un nom d'utilisateur valide dans ta DB
-                val userDetails = customUserDetailsService.loadUserByUsername(username)
-
-                println("=== Résultat de loadUserByUsername ===")
-                println("Username: ${userDetails.username}")
-                println("Password: ${userDetails.password}")
-                println("Authorities: ${userDetails.authorities}")
-            } catch (e: Exception) {
-                println("Erreur: ${e.message}")
-            }
-        }
-    }
+//
+//    @Bean
+//    fun testUserDetailsService(): CommandLineRunner {
+//        return CommandLineRunner {
+//            try {
+//                val username = "user1" // Remplace par un nom d'utilisateur valide dans ta DB
+//                val userDetails = customUserDetailsService.loadUserByUsername(username)
+//
+//                println("=== Résultat de loadUserByUsername ===")
+//                println("Username: ${userDetails.username}")
+//                println("Password: ${userDetails.password}")
+//                println("Authorities: ${userDetails.authorities}")
+//            } catch (e: Exception) {
+//                println("Erreur: ${e.message}")
+//            }
+//        }
+//    }
 }
 //) : CommandLineRunner {
 //    override fun run(vararg args: String?) {
