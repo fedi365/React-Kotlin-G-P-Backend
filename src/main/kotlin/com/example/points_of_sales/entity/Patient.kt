@@ -15,5 +15,6 @@ data class Patient(
     val nom: String,
     val prenom: String,
     val cin: String,
-    val codeAssure: String
+    val codeAssure: String,
+    val adress:String
 )
